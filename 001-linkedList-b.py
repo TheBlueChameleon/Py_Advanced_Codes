@@ -6,7 +6,7 @@
 class LinkedList :
     def __init__ (self, data = None) :
         
-        if data :
+        if data != None :
             self.first = LinkedListElement()
             self.N = 1
         else :
@@ -28,6 +28,7 @@ class LinkedList :
         reVal = self.first.realData
         
         self.first = self.first.nextNode
+        self.N -= 1
         
         return reVal
     
