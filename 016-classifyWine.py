@@ -156,7 +156,7 @@ model.fit(X_train, y_train,                         # what to learn with
 print("\n", "#" * 80, sep="")
 print("EVALUATION\n")
 
-score = model.evaluate(X_test, y_test,verbose=1)
+score = model.evaluate(X_test, y_test, verbose=1)
 print(f"Loss Function Value: {score[0]:5.2f}\nOverall Accuracy   : {score[1]*100:5.2f}%")
 
 print("-" * 80)
